@@ -1,0 +1,200 @@
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[top=2cm, bottom=-1.3cm, right = 1.7cm, left=2.7cm]{geometry}
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment:
+
+\addtolength{\voffset}{-0.6cm}
+\addtolength{\hoffset}{-0.4cm}
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{-3pt}{2pt} % Spacing around sections
+%\usepackage{showframe}
+\begin{document}
+
+\pagestyle{empty} % Removes dpage numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\LARGE \textsc{Nikunj} \textsc{Amipara}}\par} % Your name
+\par{\centering LinkedIn: \href{https://www.linkedin.com/in/nikamipara}{https://www.linkedin.com/in/nikamipara} | GitHub: \href{https://github.com/nikamipara}{https://github.com/nikamipara}\par}
+\par{\centering Date of Birth: 29 Oectober 1992 $\bullet$ Noida U.P India $\bullet$ Phone: + 91 7838218150 $\bullet$ \href{mailto:amipara@email.com}{amipara@email.com}\par  }
+%\begin{tabular}{rl}
+ %Date of Birth: 29 Oectober 1992 
+%$\bullet$ Noida U.P
+%$\bullet$ Phone: + 91 7838218150  
+%$\bullet$ \href{mailto:amipara@email.com}{amipara@email.com}
+%\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\textbf{B.Tech. in Information \& Communication Technology} \normalsize (\textsc{CPI:} 8.5/10) \hfill{\textsc{July} 2014 }\\[-3mm]\\
+\normalsize\small Dhirubhai Ambani Institute of Information and Communication Technology (\textsc{da-iict}), Gandhinagar, Gujarat.\\
+%& \textbf{Subjects:} \small\ Algorithms \& Data Structures | Operating Systems | Web Programming\\
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+%------------------------------------------------
+%-------------------
+%
+%& \\
+\normalsize{\textbf {Research Intern at \textsc{DA-IICT}, Gandhinagar }} \hfill{\textsc{Dec - Jun 2014}}
+{
+\begin{itemize}\setlength{\itemsep}{-1pt}
+        \item [$\bullet$] Using Coccinelle (a semantic patching engine), developed a patching tool that performs static analysis on the C programs.
+        \item [$\bullet$] The tool automatically identifies and patches various source level vulnerabilities in C such as Format String, Integer Overflows, and Buffer Overflows.\\[-3mm]
+     \end{itemize}
+}
+%\multicolumn{2}{c}{} \\
+
+ %\normalsize{\textbf{Research Intern at \textsc{DA-IICT}, Gandhinagar}}
+%\hfill{\textsc{May - Jul 2013}}
+%& Research Intern at \textsc{DA-IICT}, Gandhinagar \\
+
+% \small{ 
+% \begin{itemize}
+%        \item [$\bullet$] Implemented an anti-piracy technique called 'Virtual Leashing' in C, which is based on software splitting.
+%        \item [$\bullet$] the server side does all the memory management for the client code (by controlling malloc() and free() calls). If the server detects any pirated software, it disables the client software by refusing a connection and not freeing up enough memory, which disables the client software.
+%     \end{itemize} }
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+
+%\textsc{Jan - Mar 2015} 
+%& Research Intern at \textsc{DA-IICT}, Gandhinagar \\
+%& \emph{GroupMessenger - An Android Chat Application} (Android | Java)\\ 
+%& \footnotesize{ A multithreaded groupchat application in Andoid that delivers the messages in FIFO and total order using ISIS algorithm. The application can also detect failed or offline users and handle the message delivery accordingly.}\\
+%\multicolumn{2}{c}{} \\
+
+
+
+ \textbf{\normalsize{A Dynamo style NoSQL database service}} (Java | Android)
+\hfill{\textsc{March - May 2015}}
+{ 
+\begin{itemize}\setlength{\itemsep}{-1pt}
+ \item [$\bullet$] A simplified Amazon Dynamo style key-value storage system in Android using content provider interface, SQLite database and emulators as nodes.
+  \item [$\bullet$] To provide linearizability and availability at all nodes, implemented chain replication algorithm in the multithreaded calling methods (i.e. insert, delete, query). 
+   \item [$\bullet$] Also implemented Ping-ACK algorithm to detect node failure and recovery. 
+\end{itemize}   
+   }
+
+
+ \textbf{\normalsize{OS 161 Kernel Programming and Memory Management}} (C)
+\hfill{\textsc{Jan - May 2015}}
+
+
+{ 
+\begin{itemize}\setlength{\itemsep}{-1pt}
+ \item [$\bullet$] Implemented synchronization primitives (CV, Lock, Semaphore), process calls (exec, fork, getpid, exit) and file calls (read, write, open, close, lseek) in C.
+ \item [$\bullet$] Replaced the native DUMBVM with own virtual memory system by implementing coremap, sbrk() call, and page tables. Also handled page faults and replacements using FIFO policy.
+\end{itemize}
+   }
+   
+   
+%& Research Intern at \textsc{DA-IICT}, Gandhinagar \\
+
+
+\textbf{\normalsize{Click-based News Personalization}} (Java | PHP)
+\hfill{\textsc{Oct - Dec 2014}}
+
+
+{ 
+\begin{itemize}\setlength{\itemsep}{-1pt}
+        \item [$\bullet$] Indexed 3000 news articles in Solr and created a website in PHP to search the articles. 
+        \item [$\bullet$] Incorporated personalized content delivery by recording user's news preferences and clicks in XML and ranked search results using cosine similarities between user preferences and the articles.
+          \item [$\bullet$] Highly correlated news articles were forwarded to PHP web pages using PHP-JAVA Bridge to deliver personalized results to each user.
+\end{itemize}          
+}
+
+
+\textbf{\normalsize{News Reader (A Search Engine)}} (Java)
+\hfill{\textsc{Aug - Oct 2014}}
+
+{
+\begin{itemize}\setlength{\itemsep}{-1pt}
+        \item [$\bullet$] Wrote a document parser, text filters (date format conversion, stemming, stop word removal) and an indexer in Java to store 10,000 news articles of Reuters News. 
+        \item [$\bullet$] Also created a query parser and a search interface to quickly retrieve the news articles.\\[-3mm]
+\end{itemize}
+        }
+
+
+
+
+
+%\textbf{\normalsize{Classification of Handwritten Numerals}} (MATLAB)
+%\hfill{\textsc{Oct - Dec 2014}}
+%{ 
+%\begin{itemize}
+% \item [$\bullet$] Implemented three classification algorithms - Neural Networks, Logistic Regression and Naïve Bayes to recognize and classify handwritten numerals from given images. 
+% \item [$\bullet$] Neural Network outperformed the other two classifiers with lowest misclassification rate.
+%\end{itemize} 
+% }
+
+
+%  \textbf{\normalsize{Recognition and Labeling of Objects in Images}} (MATLAB)
+%  \hfill{\textsc{Oct - Dec 2014}}\\
+%  \footnotesize{ Classification of different objects such as  grass, sky, mountains, people in images using SVM classifier of MATLAB. Analyzed the impact of different image features (HOG, RGB, HSV, Texture) on the misclassification rate.}\\[-2mm]
+
+
+%\textsc{Jan - Jun 2013}
+%& \emph{Zoomba - Storing Life Events in an Android App} (Java | ADT)\\ 
+%& \footnotesize{ Created an android app that stores life events in terms of photos, videos and stories. Also created a timeline interface to show the events in chronological order.}\\
+%\multicolumn{2}{c}{} \\
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
+
+\begin{tabular}{rl}
+Languages (Proficient): & Java, C, PHP, SQL \\
+Languages (Familiar): & Python, Ruby, R, Shell, JavaScript, Perl, \textsc{html}, ARM \\
+
+Tools: & Solr, Hadoop, Git, Eclipse, GDB, MATLAB, XAMPP, OpenSSL\\
+&Android Studio, Coccinelle, PHP-Java Bridge, PostGreSQL, SQLite
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
