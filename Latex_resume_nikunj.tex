@@ -4,7 +4,7 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[letterpaper,11pt]{article}
-\usepackage[top=2cm, bottom=-1.3cm, right = 1.7cm, left=2.7cm]{geometry}
+\usepackage[top=2cm, bottom=0cm, right = 1.7cm, left=2.7cm]{geometry}
 
 \usepackage{fontspec} % For loading fonts
 \defaultfontfeatures{Mapping=tex-text}
@@ -13,6 +13,7 @@
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+\usepackage{verbatim} % required for block commenting....
 
 %\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
 % To reduce the height of the top margin uncomment:
@@ -39,7 +40,7 @@
 
 \par{\centering{\LARGE \textsc{Nikunj} \textsc{Amipara}}\par} % Your name
 \par{\centering LinkedIn: \href{https://www.linkedin.com/in/nikamipara}{https://www.linkedin.com/in/nikamipara} | GitHub: \href{https://github.com/nikamipara}{https://github.com/nikamipara}\par}
-\par{\centering Date of Birth: 29 Oectober 1992 $\bullet$ Noida U.P India $\bullet$ Phone: + 91 7838218150 $\bullet$ \href{mailto:amipara@email.com}{amipara@email.com}\par  }
+\par{\centering Date of Birth: 29 Oectober 1992 $\bullet$ Noida U.P $\bullet$ Phone: + 91 7838218150 $\bullet$ \href{mailto:curiousnikunj@gmail.com}{CuriousNikunj@gmail.com}\par  }
 %\begin{tabular}{rl}
  %Date of Birth: 29 Oectober 1992 
 %$\bullet$ Noida U.P
@@ -52,12 +53,9 @@
 %----------------------------------------------------------------------------------------
 \section{Education}
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 \textbf{B.Tech. in Information \& Communication Technology} \normalsize (\textsc{CPI:} 8.5/10) \hfill{\textsc{July} 2014 }\\[-3mm]\\
-\normalsize\small Dhirubhai Ambani Institute of Information and Communication Technology (\textsc{da-iict}), Gandhinagar, Gujarat.\\
+\normalsize\small Dhirubhai Ambani Institute of Information and Communication Technology (\textsc{da-iict}), Gandhinagar, Gujarat.
 %& \textbf{Subjects:} \small\ Algorithms \& Data Structures | Operating Systems | Web Programming\\
-
-
 
 
 %----------------------------------------------------------------------------------------
@@ -70,30 +68,48 @@
 %-------------------
 %
 %& \\
-\normalsize{\textbf {Research Intern at \textsc{DA-IICT}, Gandhinagar }} \hfill{\textsc{Dec - Jun 2014}}
+\normalsize{\textbf {Software Engineer at Samsung Research Institute (SRI) Noida}} \hfill{\textsc{Since June 2014}}
 {
 \begin{itemize}\setlength{\itemsep}{-1pt}
-        \item [$\bullet$] Using Coccinelle (a semantic patching engine), developed a patching tool that performs static analysis on the C programs.
-        \item [$\bullet$] The tool automatically identifies and patches various source level vulnerabilities in C such as Format String, Integer Overflows, and Buffer Overflows.\\[-3mm]
-     \end{itemize}
+        \item [$\bullet$] Development and Maintenance of Android applications
+        \item [$\bullet$] Worked on SNote{(for managing notes on Devices Like Galaxy Note 5, Galaxy S6)},\\ SNote Viewer(note viewer), Memo(for managing notes on Devices like A3, A5), Action Memo and Contacts. \\[-3mm]
+ \end{itemize}
 }
-%\multicolumn{2}{c}{} \\
+\normalsize{\textbf {Post Manager at Samsung Electronics Poland R\&D Center}} \hfill{\textsc{April-May 2015}}
+{
+\begin{itemize}\setlength{\itemsep}{-1pt}
+        \item [$\bullet$] During my visit, I coordinated between Test Engineers in Poland and Samsung R\&D Institute Noida for quick resolutions of critical issues for Android L OS upgrade project of smart phone models released in Europe Region. \\[-3mm]
+ \end{itemize}
+}
+\normalsize{\textbf {Software Engineer (Intern) at Samsung Research Institute (SRI) Noida}} \hfill{\textsc{Jan-June 2014}}
+{
+\begin{itemize}\setlength{\itemsep}{-1pt}
+        \item [$\bullet$] As an Internship project I developed a feature of SNote Application which helps solve mathematical equations written using SPen. \\[-3mm]
+ \end{itemize}
+}
+\normalsize{\textbf {Software Developer (Intern) at Acty System India Pvt. Ltd.}} \hfill{\textsc{May-July 2013}}
+{
+\begin{itemize}\setlength{\itemsep}{-1pt}
+        \item [$\bullet$]During my internship I Developed Quick Suggestion Forum(web application) using CakePHP framework, which allows employees to post their suggestions/ideas and it facilitates administration to manage those efficiently. \\[-3mm]
+ \end{itemize}
+}
 
- %\normalsize{\textbf{Research Intern at \textsc{DA-IICT}, Gandhinagar}}
-%\hfill{\textsc{May - Jul 2013}}
-%& Research Intern at \textsc{DA-IICT}, Gandhinagar \\
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
 
-% \small{ 
-% \begin{itemize}
-%        \item [$\bullet$] Implemented an anti-piracy technique called 'Virtual Leashing' in C, which is based on software splitting.
-%        \item [$\bullet$] the server side does all the memory management for the client code (by controlling malloc() and free() calls). If the server detects any pirated software, it disables the client software by refusing a connection and not freeing up enough memory, which disables the client software.
-%     \end{itemize} }
+\section{Technical Skills}
 
+\begin{tabular}{rl}
+Languages : & Java, C,PHP(Familiar),HTML(Familiar), Python(Familiar) \\
+Tools \& Technologies : & Android Studio, Eclipse, Perforce, Git, TraceView, Odin, DspLoger, Logel,\\
+& QXDM, CakePHP Framework, PostgreSQL, WampServer.\\
+\end{tabular}
 
 
 
 %----------------------------------------------------------------------------------------
-%	SCHOLARSHIPS AND ADDITIONAL INFO
+%	PROJECTS
 %----------------------------------------------------------------------------------------
 
 \section{Projects}
@@ -105,96 +121,66 @@
 %& \footnotesize{ A multithreaded groupchat application in Andoid that delivers the messages in FIFO and total order using ISIS algorithm. The application can also detect failed or offline users and handle the message delivery accordingly.}\\
 %\multicolumn{2}{c}{} \\
 
-
-
- \textbf{\normalsize{A Dynamo style NoSQL database service}} (Java | Android)
-\hfill{\textsc{March - May 2015}}
-{ 
-\begin{itemize}\setlength{\itemsep}{-1pt}
- \item [$\bullet$] A simplified Amazon Dynamo style key-value storage system in Android using content provider interface, SQLite database and emulators as nodes.
-  \item [$\bullet$] To provide linearizability and availability at all nodes, implemented chain replication algorithm in the multithreaded calling methods (i.e. insert, delete, query). 
-   \item [$\bullet$] Also implemented Ping-ACK algorithm to detect node failure and recovery. 
-\end{itemize}   
-   }
-
-
- \textbf{\normalsize{OS 161 Kernel Programming and Memory Management}} (C)
-\hfill{\textsc{Jan - May 2015}}
-
-
-{ 
-\begin{itemize}\setlength{\itemsep}{-1pt}
- \item [$\bullet$] Implemented synchronization primitives (CV, Lock, Semaphore), process calls (exec, fork, getpid, exit) and file calls (read, write, open, close, lseek) in C.
- \item [$\bullet$] Replaced the native DUMBVM with own virtual memory system by implementing coremap, sbrk() call, and page tables. Also handled page faults and replacements using FIFO policy.
-\end{itemize}
-   }
-   
-   
-%& Research Intern at \textsc{DA-IICT}, Gandhinagar \\
-
-
-\textbf{\normalsize{Click-based News Personalization}} (Java | PHP)
-\hfill{\textsc{Oct - Dec 2014}}
-
-
-{ 
-\begin{itemize}\setlength{\itemsep}{-1pt}
-        \item [$\bullet$] Indexed 3000 news articles in Solr and created a website in PHP to search the articles. 
-        \item [$\bullet$] Incorporated personalized content delivery by recording user's news preferences and clicks in XML and ranked search results using cosine similarities between user preferences and the articles.
-          \item [$\bullet$] Highly correlated news articles were forwarded to PHP web pages using PHP-JAVA Bridge to deliver personalized results to each user.
-\end{itemize}          
-}
-
-
-\textbf{\normalsize{News Reader (A Search Engine)}} (Java)
-\hfill{\textsc{Aug - Oct 2014}}
-
+\normalsize{\textbf {SNote Viewer}(Android | Java) } \hfill{\textsc{Jan-March 2015}}
 {
 \begin{itemize}\setlength{\itemsep}{-1pt}
-        \item [$\bullet$] Wrote a document parser, text filters (date format conversion, stemming, stop word removal) and an indexer in Java to store 10,000 news articles of Reuters News. 
-        \item [$\bullet$] Also created a query parser and a search interface to quickly retrieve the news articles.\\[-3mm]
-\end{itemize}
-        }
+        \item [$\bullet$]A lightweight application to read/open files that are created using SNote/Action Memo (.spd format). It is available in Samsung Store as well as Google Play Store.
+        \item[$\bullet$] Play Store link-  \href{https://market.android.com/details?id=com.samsung.spdviewer}{https://market.android.com/details?id=com.samsung.spdviewer}\\[-3mm]
+ \end{itemize}
+}
 
+\normalsize{\textbf {Smart Video Player}(Android | Java) } \hfill{\textsc{November 2014}}
+{
+\begin{itemize}\setlength{\itemsep}{-1pt}
+        \item [$\bullet$]Mobile Application which automatically downloads subtitles for the media files and utilizes it  to search dialogues and keywords for playing.
+        \item[$\bullet$]Application was selected for Technovate-2014 (Innovation Fair Samsung).\\[-3mm]
+ \end{itemize}
+}
 
+\normalsize{\textbf {Hostel Management System}(PHP | HTML | MySQL)} \hfill{\textsc{Jan - April 2013}}
+{
+\begin{itemize}\setlength{\itemsep}{-1pt}
+        \item [$\bullet$] A Web Application to help manage hostel in a better way. \\[-3mm]
+ \end{itemize}
+}
 
-
-
-%\textbf{\normalsize{Classification of Handwritten Numerals}} (MATLAB)
-%\hfill{\textsc{Oct - Dec 2014}}
-%{ 
-%\begin{itemize}
-% \item [$\bullet$] Implemented three classification algorithms - Neural Networks, Logistic Regression and Naïve Bayes to recognize and classify handwritten numerals from given images. 
-% \item [$\bullet$] Neural Network outperformed the other two classifiers with lowest misclassification rate.
-%\end{itemize} 
-% }
-
-
-%  \textbf{\normalsize{Recognition and Labeling of Objects in Images}} (MATLAB)
-%  \hfill{\textsc{Oct - Dec 2014}}\\
-%  \footnotesize{ Classification of different objects such as  grass, sky, mountains, people in images using SVM classifier of MATLAB. Analyzed the impact of different image features (HOG, RGB, HSV, Texture) on the misclassification rate.}\\[-2mm]
-
-
-%\textsc{Jan - Jun 2013}
-%& \emph{Zoomba - Storing Life Events in an Android App} (Java | ADT)\\ 
-%& \footnotesize{ Created an android app that stores life events in terms of photos, videos and stories. Also created a timeline interface to show the events in chronological order.}\\
-%\multicolumn{2}{c}{} \\
+\normalsize{\textbf{Vocab- A Learning Website}(PHP | HTML | MySQL)} \hfill{\textsc{Feb - April 2013}}
+{
+\begin{itemize}\setlength{\itemsep}{-1pt}
+        \item [$\bullet$] A Web Application to help students build vocabulary for competitive exams like \textsc{gre, cat}\\[-3mm]
+ \end{itemize}
+}
+\begin{comment}
+%----------------------------------------------------------------------------------------
 
 
 %----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS 
+%	ACHIEVEMENTS 
 %----------------------------------------------------------------------------------------
 
-\section{Technical Skills}
-
-\begin{tabular}{rl}
-Languages (Proficient): & Java, C, PHP, SQL \\
-Languages (Familiar): & Python, Ruby, R, Shell, JavaScript, Perl, \textsc{html}, ARM \\
-
-Tools: & Solr, Hadoop, Git, Eclipse, GDB, MATLAB, XAMPP, OpenSSL\\
-&Android Studio, Coccinelle, PHP-Java Bridge, PostGreSQL, SQLite
-\end{tabular}
+\section{Achievements}
+{
+        $\bullet$ Selected in \textbf{Technovate-2014}(Innovation Fair at Samsung) for developing Smart Video Player. \\
+        $\bullet$ Earned \textbf{ “Thank You Star”} (Reward) for doing excellent job in team \textbf{Office TG Samsung}.\\
+        $\bullet$ Attained \textbf{AIR-15196} in AIEEE 2010.
+}
 
 %----------------------------------------------------------------------------------------
+%	ROLES AND RESPONSIBILITIES 
+%----------------------------------------------------------------------------------------
 
+\section{Roles}
+{      $\bullet$ Member of Cafeteria Quality Management Committee at Samsung (2015) \\
+        $\bullet$ \textbf{Teaching Assistant} of Data structures and Algorithm Course -  \textsc{da-iict}(2013) \\
+        $\bullet$ \textbf{Coordinator} of Event Mr.\& Miss Synapse (Annual Techno cultural festival\textsc{da-iict})(2013)\\
+        $\bullet$ \textbf{Coordinator}of Event Tech-Imagine Synapse(Annual Techno cultural festival\textsc{da-iict})(2012)
+}
+%----------------------------------------------------------------------------------------
+%	Hobbies
+%----------------------------------------------------------------------------------------
+
+\section{Hobbies}
+{      Astronomy, Physics, Watching Documentaries, Playing Badminton\& Carrom.\\
+}
+\end{comment}
 \end{document}
